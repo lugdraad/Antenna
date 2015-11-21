@@ -1,0 +1,26 @@
+{
+  "assets" : [
+    {
+      "size" : "1280x768",
+      "idiom" : "tv",
+      "filename" : "ABCNews24 Large Icon.imagestack",
+      "role" : "primary-app-icon"
+    },
+    {
+      "size" : "400x240",
+      "idiom" : "tv",
+      "filename" : "ABCNews24 Small Icon.imagestack",
+      "role" : "primary-app-icon"
+    },
+    {
+      "size" : "1920x720",
+      "idiom" : "tv",
+      "filename" : "ABCNews24 Top Shelf.imageset",
+      "role" : "top-shelf-image"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}
