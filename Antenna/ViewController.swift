@@ -19,14 +19,26 @@ class ViewController: UIViewController {
     ///////////////////////////////////////////////////////////////
     
     
+    var videoPlayer: AVPlayer? = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Register for background notification
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "handleEnteredBackground", name: UIApplicationDidEnterBackgroundNotification, object: nil)
+        
+        // Play the stream
         let videoURL = NSURL(string: createURL())
-        let videoPlayer = AVPlayer(URL: videoURL!)
+        videoPlayer = AVPlayer(URL: videoURL!)
         let videoLayer = AVPlayerLayer(player: videoPlayer)
         videoLayer.frame = self.view.bounds
         self.view.layer.addSublayer(videoLayer)
-        videoPlayer.play()
+        videoPlayer!.play()
+    }
+    
+    // Handle a background notification
+    func handleEnteredBackground() {
+        videoPlayer!.pause() //counter audio fade out
+        // app will proceed to exit on suspend due to plist setting
     }
     
     enum City {
