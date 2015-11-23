@@ -37,5 +37,7 @@
 	<array>
 		<string>arm64</string>
 	</array>
+	<key>UIApplicationExitsOnSuspend</key>
+	<true/>
 </dict>
 </plist>

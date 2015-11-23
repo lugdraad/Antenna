@@ -19,38 +19,14 @@ class ViewController: UIViewController {
     ///////////////////////////////////////////////////////////////
     
     
-    var playerLayer = AVPlayerLayer()
-    var urlAddress = ""
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Register for background / foreground notifications
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "handleEnteredBackground", name: UIApplicationDidEnterBackgroundNotification, object: nil)
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "handleBecameFrontmost", name: UIApplicationDidBecomeActiveNotification, object: nil)
-        urlAddress = createURL()
-    }
-    
-    // Unregister for notifications
-    deinit {
-        NSNotificationCenter.defaultCenter().removeObserver(self)
-    }
-
-    // Handle a foreground notification
-    func handleBecameFrontmost() {
-        let videoURL = NSURL(string: urlAddress)
-        let playerItem = AVPlayerItem(URL: videoURL!)
-        let player = AVPlayer(playerItem: playerItem)
-        playerLayer = AVPlayerLayer(player: player)
-        playerLayer.frame = self.view.frame
-        self.view.layer.addSublayer(playerLayer)
-        player.play()
-    }
-    
-    // Handle a background notification
-    func handleEnteredBackground() {
-        playerLayer.player!.pause()
-        playerLayer.player = nil
-        playerLayer.removeFromSuperlayer()
+        let videoURL = NSURL(string: createURL())
+        let videoPlayer = AVPlayer(URL: videoURL!)
+        let videoLayer = AVPlayerLayer(player: videoPlayer)
+        videoLayer.frame = self.view.bounds
+        self.view.layer.addSublayer(videoLayer)
+        videoPlayer.play()
     }
     
     enum City {
