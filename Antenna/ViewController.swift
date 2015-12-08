@@ -53,11 +53,11 @@ class ViewController: UIViewController {
         #if ABCNEWS24
             switch streamQuality {
             case .High:
-                return "http://iphonestreaming.abc.net.au/news24/news24_hi.m3u8"
+                return "http://iphonestreaming.abc.net.au/news24/news24_hi.m3u8" // BANDWIDTH=708832
             case .Medium:
-                return "http://iphonestreaming.abc.net.au/news24/news24_med.m3u8"
+                return "http://iphonestreaming.abc.net.au/news24/news24_med.m3u8" // BANDWIDTH=553888
             case .Low:
-                return "http://iphonestreaming.abc.net.au/news24/news24_lo.m3u8"
+                return "http://iphonestreaming.abc.net.au/news24/news24_lo.m3u8" // BANDWIDTH=398944
             default:
                 return "http://www.abc.net.au/res/streaming/video/hls/news24.m3u8"
             }
@@ -145,17 +145,34 @@ class ViewController: UIViewController {
                 case .Townsville:
                     result += "224845/TSV3"
                 }
+            #elseif CHANNELSEVENHD
+                result += "224838/MISC2"
+                // The qualities for this stream includes "very high"
+                switch streamQuality {
+                case .High:
+                    result += "/master_vhigh.m3u8" // BANDWIDTH=3335200
+                case .Medium:
+                    result += "/master_high.m3u8" // BANDWIDTH=1830400
+                case .Low:
+                    result += "/master_med.m3u8" // BANDWIDTH=950400
+                    // result += "/master_low.m3u8" // BANDWIDTH=475200
+                default:
+                    result += "/master.m3u8"
+                }
+                return result // no quality options
             #elseif RACINGDOTCOM
                 result += "224825/MISC1"
             #endif
             
             switch streamQuality {
             case .High:
-                result += "/master_high.m3u8"
+                result += "/master_high.m3u8" // BANDWIDTH=1720400
             case .Medium:
-                result += "/master_med.m3u8"
+                // result += "/master_medl.m3u8" // Medium-low - BANDWIDTH=730400
+                result += "/master_medh.m3u8" // Medium-high - BANDWIDTH=1170400
             case .Low:
-                result += "/master_low.m3u8"
+                //result += "/master_lowl.m3u8" // Extra low - BANDWIDTH=290400
+                result += "/master_low.m3u8" // Low - BANDWIDTH=510400
             default:
                 result += "/master.m3u8"
             }
