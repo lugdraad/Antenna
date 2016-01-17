@@ -1,0 +1,3 @@
+[submodule "Artwork design files"]
+	path = Artwork design files
+	url = git@github.com:lugdraad/Antenna-Artwork.git

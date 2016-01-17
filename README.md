@@ -4,6 +4,6 @@ Based on [Your Own Channel](https://github.com/kane2931/ownchannel), Antenna is 
 
 Set your location inside the **ViewController.swift** file to view regional streams. As per the usual side-loading procedure, you will need to change the Bundle Identifier, however not just once but for each app target.
 
-All artwork (and initial testing) kindly provided by Steeley.
+All artwork (and initial testing) kindly provided by Steeley. Original design files can be found [here](https://github.com/lugdraad/Antenna-Artwork).
 
 Created as a learning project, please support the official apps when they become available.
