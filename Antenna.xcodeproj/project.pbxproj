@@ -28,6 +28,11 @@
 		7DACC7BC1BFCA061008EA309 /* Channel7.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DACC7BB1BFCA061008EA309 /* Channel7.xcassets */; };
 		7DACC7BE1BFCA07B008EA309 /* 7Two.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DACC7BD1BFCA07B008EA309 /* 7Two.xcassets */; };
 		7DACC7C01BFCA08A008EA309 /* 7Mate.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DACC7BF1BFCA08A008EA309 /* 7Mate.xcassets */; };
+		7DAFF2FD1C58F4F100C97E48 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DACC77F1BFC981B008EA309 /* ViewController.swift */; };
+		7DAFF2FE1C58F4F100C97E48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DACC77D1BFC981B008EA309 /* AppDelegate.swift */; };
+		7DAFF3011C58F4F100C97E48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DACC7811BFC981B008EA309 /* Main.storyboard */; };
+		7DAFF3021C58F4F100C97E48 /* ABCNews24.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DACC7841BFC981B008EA309 /* ABCNews24.xcassets */; };
+		7DAFF30A1C58F6C200C97E48 /* Channel9.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DAFF3091C58F6C200C97E48 /* Channel9.xcassets */; };
 		7DBFC7DA1BFCAAC100829F7B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DACC77F1BFC981B008EA309 /* ViewController.swift */; };
 		7DBFC7DB1BFCAAC100829F7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DACC77D1BFC981B008EA309 /* AppDelegate.swift */; };
 		7DBFC7DF1BFCAAC100829F7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DACC7811BFC981B008EA309 /* Main.storyboard */; };
@@ -53,6 +58,9 @@
 		7DACC7BB1BFCA061008EA309 /* Channel7.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Channel7.xcassets; sourceTree = "<group>"; };
 		7DACC7BD1BFCA07B008EA309 /* 7Two.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = 7Two.xcassets; sourceTree = "<group>"; };
 		7DACC7BF1BFCA08A008EA309 /* 7Mate.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = 7Mate.xcassets; sourceTree = "<group>"; };
+		7DAFF3061C58F4F100C97E48 /* Channel 9.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Channel 9.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DAFF3081C58F59C00C97E48 /* Channel9.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Channel9.plist; sourceTree = "<group>"; };
+		7DAFF3091C58F6C200C97E48 /* Channel9.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Channel9.xcassets; sourceTree = "<group>"; };
 		7DBFC7E31BFCAAC100829F7B /* Racing.com.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Racing.com.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DBFC7E51BFCAB0E00829F7B /* Racing.com.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Racing.com.plist; sourceTree = "<group>"; };
 		7DBFC7E61BFCAC4400829F7B /* Racing.com.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Racing.com.xcassets; sourceTree = "<group>"; };
@@ -94,6 +102,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7DAFF2FF1C58F4F100C97E48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7DBFC7DC1BFCAAC100829F7B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -121,6 +136,7 @@
 				7DACC7B11BFC9C07008EA309 /* 7 Mate.app */,
 				7DBFC7E31BFCAAC100829F7B /* Racing.com.app */,
 				7D68ADC51C16AD4300E21D43 /* 7 HD.app */,
+				7DAFF3061C58F4F100C97E48 /* Channel 9.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -145,6 +161,7 @@
 				7DACC7BD1BFCA07B008EA309 /* 7Two.xcassets */,
 				7DACC7BF1BFCA08A008EA309 /* 7Mate.xcassets */,
 				7D68ADC91C16AEF200E21D43 /* 7HD.xcassets */,
+				7DAFF3091C58F6C200C97E48 /* Channel9.xcassets */,
 				7DBFC7E61BFCAC4400829F7B /* Racing.com.xcassets */,
 			);
 			name = Assets;
@@ -158,6 +175,7 @@
 				7D36B9421BFCA51400F8978D /* 7Two.plist */,
 				7D36B9401BFCA50A00F8978D /* 7Mate.plist */,
 				7D68ADC71C16AE0500E21D43 /* 7HD.plist */,
+				7DAFF3081C58F59C00C97E48 /* Channel9.plist */,
 				7DBFC7E51BFCAB0E00829F7B /* Racing.com.plist */,
 			);
 			name = plists;
@@ -251,6 +269,23 @@
 			productReference = 7DACC7B11BFC9C07008EA309 /* 7 Mate.app */;
 			productType = "com.apple.product-type.application";
 		};
+		7DAFF2FB1C58F4F100C97E48 /* Channel 9 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DAFF3031C58F4F100C97E48 /* Build configuration list for PBXNativeTarget "Channel 9" */;
+			buildPhases = (
+				7DAFF2FC1C58F4F100C97E48 /* Sources */,
+				7DAFF2FF1C58F4F100C97E48 /* Frameworks */,
+				7DAFF3001C58F4F100C97E48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Channel 9";
+			productName = Antenna;
+			productReference = 7DAFF3061C58F4F100C97E48 /* Channel 9.app */;
+			productType = "com.apple.product-type.application";
+		};
 		7DBFC7D81BFCAAC100829F7B /* Racing.com */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7DBFC7E01BFCAAC100829F7B /* Build configuration list for PBXNativeTarget "Racing.com" */;
@@ -317,6 +352,7 @@
 				7DACC7991BFC9C01008EA309 /* 7 Two */,
 				7DACC7A61BFC9C07008EA309 /* 7 Mate */,
 				7D68ADBA1C16AD4300E21D43 /* 7 HD */,
+				7DAFF2FB1C58F4F100C97E48 /* Channel 9 */,
 				7DBFC7D81BFCAAC100829F7B /* Racing.com */,
 			);
 		};
@@ -366,6 +402,16 @@
 			files = (
 				7DACC7C01BFCA08A008EA309 /* 7Mate.xcassets in Resources */,
 				7DACC7AD1BFC9C07008EA309 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DAFF3001C58F4F100C97E48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DAFF3011C58F4F100C97E48 /* Main.storyboard in Resources */,
+				7DAFF3021C58F4F100C97E48 /* ABCNews24.xcassets in Resources */,
+				7DAFF30A1C58F6C200C97E48 /* Channel9.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +469,15 @@
 			files = (
 				7DACC7A81BFC9C07008EA309 /* ViewController.swift in Sources */,
 				7DACC7A91BFC9C07008EA309 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DAFF2FC1C58F4F100C97E48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DAFF2FD1C58F4F100C97E48 /* ViewController.swift in Sources */,
+				7DAFF2FE1C58F4F100C97E48 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -678,6 +733,34 @@
 			};
 			name = Release;
 		};
+		7DAFF3041C58F4F100C97E48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = Channel9;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Channel9 Launch Image";
+				INFOPLIST_FILE = "$(SRCROOT)/Antenna/Channel9.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-DCHANNELNINE -DCHANNELNINESUITE";
+				PRODUCT_BUNDLE_IDENTIFIER = me.lugdraad.Channel9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		7DAFF3051C58F4F100C97E48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = Channel9;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Channel9 Launch Image";
+				INFOPLIST_FILE = "$(SRCROOT)/Antenna/Channel9.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-DCHANNELNINE -DCHANNELNINESUITE";
+				PRODUCT_BUNDLE_IDENTIFIER = me.lugdraad.Channel9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
 		7DBFC7E11BFCAAC100829F7B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -761,6 +844,15 @@
 			buildConfigurations = (
 				7DACC7AF1BFC9C07008EA309 /* Debug */,
 				7DACC7B01BFC9C07008EA309 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7DAFF3031C58F4F100C97E48 /* Build configuration list for PBXNativeTarget "Channel 9" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DAFF3041C58F4F100C97E48 /* Debug */,
+				7DAFF3051C58F4F100C97E48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

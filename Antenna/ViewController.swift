@@ -62,7 +62,7 @@ class ViewController: UIViewController {
                 return "http://www.abc.net.au/res/streaming/video/hls/news24.m3u8"
             }
 
-        #else
+        #elseif CHANNELSEVENSUITE
             var result = "https://sevenwestmedia01-i.akamaihd.net/hls/live/"
             #if CHANNELSEVEN
                 switch nearestCity {
@@ -178,6 +178,41 @@ class ViewController: UIViewController {
             }
             
             return result
+            
+        #elseif CHANNELNINESUITE
+            var result = "https://9nowlivehls-i.akamaihd.net/hls/live/"
+            #if CHANNELNINE
+                switch nearestCity {
+                case .Adelaide:
+                    result += "226647/ch9adlprd"
+                case .Brisbane, .Cairns, .Mackay, .Maroochydore, .Maryborough, .Rockhampton, .Toowoomba, .Townsville:
+                    result += "226646/ch9bneprd"
+                case .Melbourne:
+                    result += "226644/ch9melprd"
+                case .Perth:
+                    result += "226645/ch9perprd"
+                case .Sydney:
+                    result += "226554/ch9sydprd"
+                }
+            #endif
+            
+            switch streamQuality {
+            case .High:
+                // result += "/master5000.m3u8" // Very-high - BANDWIDTH=4999999
+                result += "/master3000.m3u8" // BANDWIDTH=2999999
+            case .Medium:
+                result += "/master1800.m3u8" // BANDWIDTH=1799999
+            case .Low:
+                result += "/master700.m3u8" // BANDWIDTH=699999
+                // result += "/master192.m3u8" // Extra low - BANDWIDTH=191999
+            default:
+                result += "/master.m3u8"
+            }
+            
+            return result
+            
+        #else
+            return ""
         #endif
     }
     
