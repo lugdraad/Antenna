@@ -12,8 +12,8 @@ class ViewController: UIViewController {
     //               Maryborough (Wide Bay), Rockhampton (Central),
     //               Toowoomba, Townsville
     
-    let streamQuality = Quality.High
-    // Auto, Low, Medium, High
+    let streamQuality = Quality.Maximum
+    // Auto, Low, Medium, High, Maximum
     
     /// That is all ///////////////////////////////////////////////
     ///////////////////////////////////////////////////////////////
@@ -46,20 +46,22 @@ class ViewController: UIViewController {
     }
     
     enum Quality {
-        case Auto, Low, Medium, High
+        case Auto, Low, Medium, High, Maximum
     }
     
     func createURL() -> String {
         #if ABCNEWS24
             switch streamQuality {
+            case .Maximum:
+                return "http://iphonestreaming.abc.net.au/news24/news24_hi.m3u8" // 709 Kbps - 512x288
             case .High:
-                return "http://iphonestreaming.abc.net.au/news24/news24_hi.m3u8" // BANDWIDTH=708832
+                return "http://iphonestreaming.abc.net.au/news24/news24_med.m3u8" // 554 Kbps - 512x288
             case .Medium:
-                return "http://iphonestreaming.abc.net.au/news24/news24_med.m3u8" // BANDWIDTH=553888
+                return "http://iphonestreaming.abc.net.au/news24/news24_lo.m3u8" // 399 Kbps - 400x224
             case .Low:
-                return "http://iphonestreaming.abc.net.au/news24/news24_lo.m3u8" // BANDWIDTH=398944
+                return "http://iphonestreaming.abc.net.au/news24/news24_vlo.m3u8" // 296 Kbps - 320x180
             default:
-                return "http://www.abc.net.au/res/streaming/video/hls/news24.m3u8"
+                return "http://www.abc.net.au/res/streaming/video/hls/news24.m3u8" // Self-adjusting
             }
 
         #elseif CHANNELSEVENSUITE
@@ -147,34 +149,35 @@ class ViewController: UIViewController {
                 }
             #elseif CHANNELSEVENHD
                 result += "224838/MISC2"
-                // The qualities for this stream includes "very high"
                 switch streamQuality {
+                case .Maximum:
+                    result += "/master_vhigh.m3u8" // 3,335 Kbps - 1920x1080
                 case .High:
-                    result += "/master_vhigh.m3u8" // BANDWIDTH=3335200
+                    result += "/master_high.m3u8" // 1,830 Kbps - 1024x576
                 case .Medium:
-                    result += "/master_high.m3u8" // BANDWIDTH=1830400
+                    result += "/master_med.m3u8" // 950 Kbps - 640x360
                 case .Low:
-                    result += "/master_med.m3u8" // BANDWIDTH=950400
-                    // result += "/master_low.m3u8" // BANDWIDTH=475200
+                    result += "/master_low.m3u8" // 475 Kbps - 320x180
                 default:
-                    result += "/master.m3u8"
+                    result += "/master.m3u8" // Self-adjusting
                 }
-                return result // no quality options
+                return result
             #elseif RACINGDOTCOM
                 result += "224825/MISC1"
             #endif
             
             switch streamQuality {
+            case .Maximum:
+                result += "/master_high.m3u8" // 1,720 Kbps - 896x504
             case .High:
-                result += "/master_high.m3u8" // BANDWIDTH=1720400
+                result += "/master_medh.m3u8" // 1,170 Kbps - 640x360
             case .Medium:
-                // result += "/master_medl.m3u8" // Medium-low - BANDWIDTH=730400
-                result += "/master_medh.m3u8" // Medium-high - BANDWIDTH=1170400
+                result += "/master_medl.m3u8" // 730 Kbps - 512x288
             case .Low:
-                //result += "/master_lowl.m3u8" // Extra low - BANDWIDTH=290400
-                result += "/master_low.m3u8" // Low - BANDWIDTH=510400
+                result += "/master_low.m3u8" // 510 Kbps - 320x180
+                //result += "/master_lowl.m3u8" // 290 Kbps - 256x144
             default:
-                result += "/master.m3u8"
+                result += "/master.m3u8" // Self-adjusting
             }
             
             return result
@@ -197,16 +200,17 @@ class ViewController: UIViewController {
             #endif
             
             switch streamQuality {
+            case .Maximum:
+                result += "/master5000.m3u8" // 5,000 Kbps - 1280x720
             case .High:
-                // result += "/master5000.m3u8" // Very-high - BANDWIDTH=4999999
-                result += "/master3000.m3u8" // BANDWIDTH=2999999
+                result += "/master3000.m3u8" // 3,000 Kbps - 854x480
             case .Medium:
-                result += "/master1800.m3u8" // BANDWIDTH=1799999
+                // result += "/master1800.m3u8" // 1,800 Kbps - 640x360
+                result += "/master700.m3u8" // 700 Kbps - 426x240
             case .Low:
-                result += "/master700.m3u8" // BANDWIDTH=699999
-                // result += "/master192.m3u8" // Extra low - BANDWIDTH=191999
+                result += "/master192.m3u8" // 192 Kbps - 416x234
             default:
-                result += "/master.m3u8"
+                result += "/master.m3u8" // Self-adjusting
             }
             
             return result
