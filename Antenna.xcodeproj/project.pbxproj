@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D0E1EE61C61AE790020CB4A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DACC77F1BFC981B008EA309 /* ViewController.swift */; };
+		7D0E1EE71C61AE790020CB4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DACC77D1BFC981B008EA309 /* AppDelegate.swift */; };
+		7D0E1EEA1C61AE790020CB4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DACC7811BFC981B008EA309 /* Main.storyboard */; };
+		7D0E1EF41C61AFAF0020CB4A /* Channel10.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D0E1EF31C61AFAF0020CB4A /* Channel10.xcassets */; };
 		7D68ADBC1C16AD4300E21D43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DACC77F1BFC981B008EA309 /* ViewController.swift */; };
 		7D68ADBD1C16AD4300E21D43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DACC77D1BFC981B008EA309 /* AppDelegate.swift */; };
-		7D68ADC01C16AD4300E21D43 /* Channel7.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DACC7BB1BFCA061008EA309 /* Channel7.xcassets */; };
 		7D68ADC11C16AD4300E21D43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DACC7811BFC981B008EA309 /* Main.storyboard */; };
 		7D68ADCA1C16AEF200E21D43 /* 7HD.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D68ADC91C16AEF200E21D43 /* 7HD.xcassets */; };
 		7D9E63121BFCB0AB00E9F24A /* ABCNews24.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DACC7841BFC981B008EA309 /* ABCNews24.xcassets */; };
@@ -31,7 +34,6 @@
 		7DAFF2FD1C58F4F100C97E48 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DACC77F1BFC981B008EA309 /* ViewController.swift */; };
 		7DAFF2FE1C58F4F100C97E48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DACC77D1BFC981B008EA309 /* AppDelegate.swift */; };
 		7DAFF3011C58F4F100C97E48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DACC7811BFC981B008EA309 /* Main.storyboard */; };
-		7DAFF3021C58F4F100C97E48 /* ABCNews24.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DACC7841BFC981B008EA309 /* ABCNews24.xcassets */; };
 		7DAFF30A1C58F6C200C97E48 /* Channel9.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DAFF3091C58F6C200C97E48 /* Channel9.xcassets */; };
 		7DBFC7DA1BFCAAC100829F7B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DACC77F1BFC981B008EA309 /* ViewController.swift */; };
 		7DBFC7DB1BFCAAC100829F7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DACC77D1BFC981B008EA309 /* AppDelegate.swift */; };
@@ -40,6 +42,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7D0E1EF01C61AE790020CB4A /* Channel 10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Channel 10.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D0E1EF21C61AEF20020CB4A /* Channel 10.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Channel 10.plist"; sourceTree = "<group>"; };
+		7D0E1EF31C61AFAF0020CB4A /* Channel10.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Channel10.xcassets; sourceTree = "<group>"; };
 		7D36B93D1BFCA4FF00F8978D /* Channel7.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Channel7.plist; sourceTree = "<group>"; };
 		7D36B9401BFCA50A00F8978D /* 7Mate.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 7Mate.plist; sourceTree = "<group>"; };
 		7D36B9421BFCA51400F8978D /* 7Two.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 7Two.plist; sourceTree = "<group>"; };
@@ -67,6 +72,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7D0E1EE81C61AE790020CB4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7D68ADBE1C16AD4300E21D43 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -137,6 +149,7 @@
 				7DBFC7E31BFCAAC100829F7B /* Racing.com.app */,
 				7D68ADC51C16AD4300E21D43 /* 7 HD.app */,
 				7DAFF3061C58F4F100C97E48 /* Channel 9.app */,
+				7D0E1EF01C61AE790020CB4A /* Channel 10.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -163,6 +176,7 @@
 				7D68ADC91C16AEF200E21D43 /* 7HD.xcassets */,
 				7DAFF3091C58F6C200C97E48 /* Channel9.xcassets */,
 				7DBFC7E61BFCAC4400829F7B /* Racing.com.xcassets */,
+				7D0E1EF31C61AFAF0020CB4A /* Channel10.xcassets */,
 			);
 			name = Assets;
 			sourceTree = "<group>";
@@ -176,6 +190,7 @@
 				7D36B9401BFCA50A00F8978D /* 7Mate.plist */,
 				7D68ADC71C16AE0500E21D43 /* 7HD.plist */,
 				7DAFF3081C58F59C00C97E48 /* Channel9.plist */,
+				7D0E1EF21C61AEF20020CB4A /* Channel 10.plist */,
 				7DBFC7E51BFCAB0E00829F7B /* Racing.com.plist */,
 			);
 			name = plists;
@@ -184,6 +199,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		7D0E1EE41C61AE790020CB4A /* Channel 10 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D0E1EED1C61AE790020CB4A /* Build configuration list for PBXNativeTarget "Channel 10" */;
+			buildPhases = (
+				7D0E1EE51C61AE790020CB4A /* Sources */,
+				7D0E1EE81C61AE790020CB4A /* Frameworks */,
+				7D0E1EE91C61AE790020CB4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Channel 10";
+			productName = Antenna;
+			productReference = 7D0E1EF01C61AE790020CB4A /* Channel 10.app */;
+			productType = "com.apple.product-type.application";
+		};
 		7D68ADBA1C16AD4300E21D43 /* 7 HD */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7D68ADC21C16AD4300E21D43 /* Build configuration list for PBXNativeTarget "7 HD" */;
@@ -353,18 +385,27 @@
 				7DACC7A61BFC9C07008EA309 /* 7 Mate */,
 				7D68ADBA1C16AD4300E21D43 /* 7 HD */,
 				7DAFF2FB1C58F4F100C97E48 /* Channel 9 */,
+				7D0E1EE41C61AE790020CB4A /* Channel 10 */,
 				7DBFC7D81BFCAAC100829F7B /* Racing.com */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		7D0E1EE91C61AE790020CB4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D0E1EF41C61AFAF0020CB4A /* Channel10.xcassets in Resources */,
+				7D0E1EEA1C61AE790020CB4A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7D68ADBF1C16AD4300E21D43 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				7D68ADCA1C16AEF200E21D43 /* 7HD.xcassets in Resources */,
-				7D68ADC01C16AD4300E21D43 /* Channel7.xcassets in Resources */,
 				7D68ADC11C16AD4300E21D43 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -410,7 +451,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DAFF3011C58F4F100C97E48 /* Main.storyboard in Resources */,
-				7DAFF3021C58F4F100C97E48 /* ABCNews24.xcassets in Resources */,
 				7DAFF30A1C58F6C200C97E48 /* Channel9.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,6 +467,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7D0E1EE51C61AE790020CB4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D0E1EE61C61AE790020CB4A /* ViewController.swift in Sources */,
+				7D0E1EE71C61AE790020CB4A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7D68ADBB1C16AD4300E21D43 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -504,6 +553,34 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		7D0E1EEE1C61AE790020CB4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = Channel10;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Channel10 Launch Image";
+				INFOPLIST_FILE = "$(SRCROOT)/Antenna/Channel 10.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-DCHANNELTEN -DCHANNELTENSUITE";
+				PRODUCT_BUNDLE_IDENTIFIER = me.lugdraad.Channel10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		7D0E1EEF1C61AE790020CB4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = Channel10;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Channel10 Launch Image";
+				INFOPLIST_FILE = "$(SRCROOT)/Antenna/Channel 10.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-DCHANNELTEN -DCHANNELTENSUITE";
+				PRODUCT_BUNDLE_IDENTIFIER = me.lugdraad.Channel10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
 		7D68ADC31C16AD4300E21D43 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -794,6 +871,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7D0E1EED1C61AE790020CB4A /* Build configuration list for PBXNativeTarget "Channel 10" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D0E1EEE1C61AE790020CB4A /* Debug */,
+				7D0E1EEF1C61AE790020CB4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		7D68ADC21C16AD4300E21D43 /* Build configuration list for PBXNativeTarget "7 HD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

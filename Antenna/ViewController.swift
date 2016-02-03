@@ -215,6 +215,9 @@ class ViewController: UIViewController {
             
             return result
             
+        #elseif CHANNELTENSUITE
+            return "http://csm-e.cds1.yospace.com/csm/extlive/networkten01,SDTEN.m3u8"
+            
         #else
             return ""
         #endif
