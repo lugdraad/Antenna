@@ -43,7 +43,6 @@
 
 /* Begin PBXFileReference section */
 		7D0E1EF01C61AE790020CB4A /* Channel 10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Channel 10.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7D0E1EF21C61AEF20020CB4A /* Channel 10.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Channel 10.plist"; sourceTree = "<group>"; };
 		7D0E1EF31C61AFAF0020CB4A /* Channel10.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Channel10.xcassets; sourceTree = "<group>"; };
 		7D36B93D1BFCA4FF00F8978D /* Channel7.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Channel7.plist; sourceTree = "<group>"; };
 		7D36B9401BFCA50A00F8978D /* 7Mate.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 7Mate.plist; sourceTree = "<group>"; };
@@ -69,6 +68,7 @@
 		7DBFC7E31BFCAAC100829F7B /* Racing.com.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Racing.com.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DBFC7E51BFCAB0E00829F7B /* Racing.com.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Racing.com.plist; sourceTree = "<group>"; };
 		7DBFC7E61BFCAC4400829F7B /* Racing.com.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Racing.com.xcassets; sourceTree = "<group>"; };
+		7DD2BF331C63266400B9F7D4 /* Channel10.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Channel10.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,7 +190,7 @@
 				7D36B9401BFCA50A00F8978D /* 7Mate.plist */,
 				7D68ADC71C16AE0500E21D43 /* 7HD.plist */,
 				7DAFF3081C58F59C00C97E48 /* Channel9.plist */,
-				7D0E1EF21C61AEF20020CB4A /* Channel 10.plist */,
+				7DD2BF331C63266400B9F7D4 /* Channel10.plist */,
 				7DBFC7E51BFCAB0E00829F7B /* Racing.com.plist */,
 			);
 			name = plists;
@@ -558,7 +558,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = Channel10;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Channel10 Launch Image";
-				INFOPLIST_FILE = "$(SRCROOT)/Antenna/Channel 10.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Antenna/Channel10.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "-DCHANNELTEN -DCHANNELTENSUITE";
 				PRODUCT_BUNDLE_IDENTIFIER = me.lugdraad.Channel10;
@@ -572,7 +572,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = Channel10;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Channel10 Launch Image";
-				INFOPLIST_FILE = "$(SRCROOT)/Antenna/Channel 10.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Antenna/Channel10.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "-DCHANNELTEN -DCHANNELTENSUITE";
 				PRODUCT_BUNDLE_IDENTIFIER = me.lugdraad.Channel10;
