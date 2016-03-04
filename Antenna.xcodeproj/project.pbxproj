@@ -39,6 +39,10 @@
 		7DBFC7DB1BFCAAC100829F7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DACC77D1BFC981B008EA309 /* AppDelegate.swift */; };
 		7DBFC7DF1BFCAAC100829F7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DACC7811BFC981B008EA309 /* Main.storyboard */; };
 		7DBFC7E71BFCAC4400829F7B /* Racing.com.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DBFC7E61BFCAC4400829F7B /* Racing.com.xcassets */; };
+		7DE7CA361C89C50600E72F0C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DACC77F1BFC981B008EA309 /* ViewController.swift */; };
+		7DE7CA371C89C50600E72F0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DACC77D1BFC981B008EA309 /* AppDelegate.swift */; };
+		7DE7CA3B1C89C50600E72F0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DACC7811BFC981B008EA309 /* Main.storyboard */; };
+		7DE7CA431C89C70A00E72F0C /* 7Flix.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DE7CA421C89C70A00E72F0C /* 7Flix.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +73,9 @@
 		7DBFC7E51BFCAB0E00829F7B /* Racing.com.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Racing.com.plist; sourceTree = "<group>"; };
 		7DBFC7E61BFCAC4400829F7B /* Racing.com.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Racing.com.xcassets; sourceTree = "<group>"; };
 		7DD2BF331C63266400B9F7D4 /* Channel10.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Channel10.plist; sourceTree = "<group>"; };
+		7DE7CA3F1C89C50600E72F0C /* 7 Flix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "7 Flix.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DE7CA411C89C5CB00E72F0C /* 7Flix.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = 7Flix.plist; sourceTree = "<group>"; };
+		7DE7CA421C89C70A00E72F0C /* 7Flix.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = 7Flix.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +135,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7DE7CA381C89C50600E72F0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -150,6 +164,7 @@
 				7D68ADC51C16AD4300E21D43 /* 7 HD.app */,
 				7DAFF3061C58F4F100C97E48 /* Channel 9.app */,
 				7D0E1EF01C61AE790020CB4A /* Channel 10.app */,
+				7DE7CA3F1C89C50600E72F0C /* 7 Flix.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -171,9 +186,10 @@
 			children = (
 				7DACC7841BFC981B008EA309 /* ABCNews24.xcassets */,
 				7DACC7BB1BFCA061008EA309 /* Channel7.xcassets */,
+				7D68ADC91C16AEF200E21D43 /* 7HD.xcassets */,
 				7DACC7BD1BFCA07B008EA309 /* 7Two.xcassets */,
 				7DACC7BF1BFCA08A008EA309 /* 7Mate.xcassets */,
-				7D68ADC91C16AEF200E21D43 /* 7HD.xcassets */,
+				7DE7CA421C89C70A00E72F0C /* 7Flix.xcassets */,
 				7DAFF3091C58F6C200C97E48 /* Channel9.xcassets */,
 				7DBFC7E61BFCAC4400829F7B /* Racing.com.xcassets */,
 				7D0E1EF31C61AFAF0020CB4A /* Channel10.xcassets */,
@@ -186,9 +202,10 @@
 			children = (
 				7DACC7861BFC981B008EA309 /* ABCNews24.plist */,
 				7D36B93D1BFCA4FF00F8978D /* Channel7.plist */,
+				7D68ADC71C16AE0500E21D43 /* 7HD.plist */,
 				7D36B9421BFCA51400F8978D /* 7Two.plist */,
 				7D36B9401BFCA50A00F8978D /* 7Mate.plist */,
-				7D68ADC71C16AE0500E21D43 /* 7HD.plist */,
+				7DE7CA411C89C5CB00E72F0C /* 7Flix.plist */,
 				7DAFF3081C58F59C00C97E48 /* Channel9.plist */,
 				7DD2BF331C63266400B9F7D4 /* Channel10.plist */,
 				7DBFC7E51BFCAB0E00829F7B /* Racing.com.plist */,
@@ -335,6 +352,23 @@
 			productReference = 7DBFC7E31BFCAAC100829F7B /* Racing.com.app */;
 			productType = "com.apple.product-type.application";
 		};
+		7DE7CA341C89C50600E72F0C /* 7 Flix */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DE7CA3C1C89C50600E72F0C /* Build configuration list for PBXNativeTarget "7 Flix" */;
+			buildPhases = (
+				7DE7CA351C89C50600E72F0C /* Sources */,
+				7DE7CA381C89C50600E72F0C /* Frameworks */,
+				7DE7CA391C89C50600E72F0C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "7 Flix";
+			productName = Antenna;
+			productReference = 7DE7CA3F1C89C50600E72F0C /* 7 Flix.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -345,24 +379,8 @@
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = lugdraad;
 				TargetAttributes = {
-					7D68ADBA1C16AD4300E21D43 = {
-						DevelopmentTeam = UG4YZ2X2YB;
-					};
 					7DACC7791BFC981B008EA309 = {
 						CreatedOnToolsVersion = 7.1.1;
-						DevelopmentTeam = UG4YZ2X2YB;
-					};
-					7DACC78C1BFC9BE5008EA309 = {
-						DevelopmentTeam = UG4YZ2X2YB;
-					};
-					7DACC7991BFC9C01008EA309 = {
-						DevelopmentTeam = UG4YZ2X2YB;
-					};
-					7DACC7A61BFC9C07008EA309 = {
-						DevelopmentTeam = UG4YZ2X2YB;
-					};
-					7DBFC7D81BFCAAC100829F7B = {
-						DevelopmentTeam = UG4YZ2X2YB;
 					};
 				};
 			};
@@ -381,9 +399,10 @@
 			targets = (
 				7DACC7791BFC981B008EA309 /* ABC News 24 */,
 				7DACC78C1BFC9BE5008EA309 /* Channel 7 */,
+				7D68ADBA1C16AD4300E21D43 /* 7 HD */,
 				7DACC7991BFC9C01008EA309 /* 7 Two */,
 				7DACC7A61BFC9C07008EA309 /* 7 Mate */,
-				7D68ADBA1C16AD4300E21D43 /* 7 HD */,
+				7DE7CA341C89C50600E72F0C /* 7 Flix */,
 				7DAFF2FB1C58F4F100C97E48 /* Channel 9 */,
 				7D0E1EE41C61AE790020CB4A /* Channel 10 */,
 				7DBFC7D81BFCAAC100829F7B /* Racing.com */,
@@ -464,6 +483,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7DE7CA391C89C50600E72F0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DE7CA431C89C70A00E72F0C /* 7Flix.xcassets in Resources */,
+				7DE7CA3B1C89C50600E72F0C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -536,6 +564,15 @@
 			files = (
 				7DBFC7DA1BFCAAC100829F7B /* ViewController.swift in Sources */,
 				7DBFC7DB1BFCAAC100829F7B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DE7CA351C89C50600E72F0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DE7CA361C89C50600E72F0C /* ViewController.swift in Sources */,
+				7DE7CA371C89C50600E72F0C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -697,6 +734,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = ABCNews24;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "ABCNews24 Launch Image";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "$(SRCROOT)/Antenna/ABCNews24.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				"OTHER_SWIFT_FLAGS[arch=*]" = "-DABCNEWS24";
@@ -711,6 +749,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = ABCNews24;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "ABCNews24 Launch Image";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "$(SRCROOT)/Antenna/ABCNews24.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				"OTHER_SWIFT_FLAGS[arch=*]" = "-DABCNEWS24";
@@ -815,6 +854,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = Channel9;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Channel9 Launch Image";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "$(SRCROOT)/Antenna/Channel9.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "-DCHANNELNINE -DCHANNELNINESUITE";
@@ -829,6 +869,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = Channel9;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Channel9 Launch Image";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "$(SRCROOT)/Antenna/Channel9.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "-DCHANNELNINE -DCHANNELNINESUITE";
@@ -863,6 +904,36 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "-DRACINGDOTCOM -DCHANNELSEVENSUITE";
 				PRODUCT_BUNDLE_IDENTIFIER = me.lugdraad.Racing.com;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		7DE7CA3D1C89C50600E72F0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = 7Flix;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "7Flix Launch Image";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "$(SRCROOT)/Antenna/7Flix.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-DCHANNELSEVENFLIX -DCHANNELSEVENSUITE";
+				PRODUCT_BUNDLE_IDENTIFIER = me.lugdraad.7Flix;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		7DE7CA3E1C89C50600E72F0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = 7Flix;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "7Flix Launch Image";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "$(SRCROOT)/Antenna/7Flix.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-DCHANNELSEVENFLIX -DCHANNELSEVENSUITE";
+				PRODUCT_BUNDLE_IDENTIFIER = me.lugdraad.7Flix;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
@@ -948,6 +1019,15 @@
 			buildConfigurations = (
 				7DBFC7E11BFCAAC100829F7B /* Debug */,
 				7DBFC7E21BFCAAC100829F7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7DE7CA3C1C89C50600E72F0C /* Build configuration list for PBXNativeTarget "7 Flix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DE7CA3D1C89C50600E72F0C /* Debug */,
+				7DE7CA3E1C89C50600E72F0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

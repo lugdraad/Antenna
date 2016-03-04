@@ -147,6 +147,33 @@ class ViewController: UIViewController {
                 case .Townsville:
                     result += "224845/TSV3"
                 }
+            #elseif CHANNELSEVENFLIX
+                switch nearestCity {
+                case .Adelaide:
+                    result += "224859/ADE6"
+                case .Brisbane:
+                    result += "224858/BRI6"
+                case .Cairns, .Mackay, .Maroochydore, .Maryborough, .Rockhampton, .Toowoomba, .Townsville:
+                    result += "224861/QLD6"
+                case .Melbourne:
+                    result += "224856/MEL6"
+                case .Perth:
+                    result += "224860/PER6"
+                case .Sydney:
+                    result += "224857/SYD6"
+                }
+                switch streamQuality {
+                case .Maximum, .High:
+                    result += "/master_high.m3u8" // 1,170 Kbps - 640x360
+                case .Medium:
+                    result += "/master_med.m3u8" // 730 Kbps - 512x288
+                case .Low:
+                    result += "/master_low.m3u8" // 510 Kbps - 320x180
+                    //result += "/master_lowl.m3u8" // 290 Kbps - 256x144
+                default:
+                    result += "/master.m3u8" // Self-adjusting
+                }
+                return result
             #elseif CHANNELSEVENHD
                 result += "224838/MISC2"
                 switch streamQuality {
@@ -166,6 +193,7 @@ class ViewController: UIViewController {
                 result += "224825/MISC1"
             #endif
             
+            #if !CHANNELSEVENHD && !CHANNELSEVENFLIX
             switch streamQuality {
             case .Maximum:
                 result += "/master_high.m3u8" // 1,720 Kbps - 896x504
@@ -179,8 +207,8 @@ class ViewController: UIViewController {
             default:
                 result += "/master.m3u8" // Self-adjusting
             }
-            
             return result
+            #endif
             
         #elseif CHANNELNINESUITE
             var result = "https://9nowlivehls-i.akamaihd.net/hls/live/"
